@@ -1,7 +1,8 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
+import { BsTelegram } from 'react-icons/bs'
+import { AiOutlineTwitter } from 'react-icons/ai'
 let navItems = [
   {
     label: 'Home',
@@ -9,12 +10,7 @@ let navItems = [
     icon: '/assets/icons/business.png',
   },
   {
-    label: 'About',
-    route: 'Market',
-    icon: '/assets/icons/finance.png',
-  },
-  {
-    label: 'Echosystem',
+    label: 'About Us',
     route: 'Market',
     icon: '/assets/icons/finance.png',
   },
@@ -23,8 +19,16 @@ let navItems = [
     route: 'Market',
     icon: '/assets/icons/finance.png',
   },
-  // { label: "Features", route: "Create", icon: "/assets/icons/interface.png" },
-  // { label: "Roadmap", route: "Wallet", icon: "/assets/icons/cube.png" },
+  {
+    label: 'Tokenomics',
+    route: 'Market',
+    icon: '/assets/icons/finance.png',
+  },
+  {
+    label: 'How to buy',
+    route: 'how-to-buy',
+    icon: '/assets/icons/finance.png',
+  },
 ]
 
 export default function Navbar() {
@@ -39,24 +43,24 @@ export default function Navbar() {
           : 'bg-transparent'
       }   max-w-7xl`}
     >
-      <div className="font-orbitron flex items-center justify-between  py-3 md:justify-start md:space-x-10 animate-top-left">
-        <img src="/logo.svg" className="" alt="" />
-        <div className=" flex  flex-grow space-x-4 lg:w-0">
+      <div className="font-orbitron flex items-center justify-between  py-4 px-2 md:justify-start md:space-x-10 animate-top-left">
+        <img src="/assets/logos/text-logo.svg" className="" alt="" />
+        <div className=" flex items-center  flex-grow space-x-4 lg:w-0">
           <Popover.Group
             as="nav"
-            className="hidden space-x-10 md:flex justify-center  flex-grow"
+            className="hidden space-x-10 lg:flex justify-center  flex-grow"
           >
             {navItems.map((nav, i) => {
               return (
                 <a
                   key={i}
                   href={nav.route}
-                  className={`text-medium font-normal hover:text-[#54FF7F]
+                  className={`text-medium font-normal text-white hover:text-opacity-100
                      
                      ${
                        route == nav.route
-                         ? ' text-[#54FF7F] '
-                         : 'text-[#9292C5]'
+                         ? ' text-opacity-100 '
+                         : 'text-opacity-30'
                      }
                   `}
                 >
@@ -68,13 +72,18 @@ export default function Navbar() {
               )
             })}
           </Popover.Group>
-          <a
-            href="/"
-            className="md:flex hidden  justify-self-end whitespace-nowrap rounded-md cursor-pointer  transition-colors hover:border-white   py-2 font-bold  px-3 text-sm  bg-white text-black hover:bg-white hover:bg-opacity-40 hover:backdrop-blur-lg"
-          >
-            <span>VIEW BETA DAPP</span>
-          </a>
-          <div className=" md:hidden flex justify-end w-full pr-3">
+          <div className="sm:flex hidden items-center gap-x-4 sm:flex-grow lg:flex-grow-0 justify-end">
+          <div className="bg-[#fff] bg-opacity-20 rounded-full h-[30px] w-[2px] mr-7 hidden lg:flex"></div>
+            <a
+              href="/"
+              className=" whitespace-nowrap rounded-full cursor-pointer  hover:border-white   py-2.5 font-bold  px-8 text-sm  bg-[#FD7D00] text-white hover:bg-white hover:bg-opacity-40 transition-colors duration-300"
+            >
+              Launch App
+            </a>
+            <BsTelegram className="text-white hover:text-[#FD7D00]  hover:bg-white rounded-full text-2xl cursor-pointer" />
+            <AiOutlineTwitter className="text-white hover:text-[#FD7D00] text-2xl cursor-pointer" />
+          </div>
+          <div className=" lg:hidden flex justify-end w-full sm:w-fit">
             <Popover.Button className=" inline-flex items-center justify-center  rounded-md  p-2">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" color="white" aria-hidden="true" />
@@ -100,7 +109,7 @@ export default function Navbar() {
             <div className="bg-black px-3 py-3 rounded-md">
               <div className="flex items-center justify-between">
                 <div className="focus:border:0 flex items-center justify-center  focus:outline-0 focus:ring-0">
-                  <img src="/logo.svg" alt="" />
+                  <img src="/assets/logos/text-logo.svg" alt="" />
                 </div>
                 <div className="mr-2">
                   <Popover.Button className=" inline-flex items-center justify-center rounded-md  p-2">
