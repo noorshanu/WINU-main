@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@font-face {
+  font-family: "power";
+  src: url("fonts/PowerPassionDemoRegular.ttf");
+}
 body{
   background: #15141A;
+}
+
+.font-power{
+  font-family: 'power';
 }
