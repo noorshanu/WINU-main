@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { BsTelegram } from 'react-icons/bs'
@@ -33,17 +33,30 @@ let navItems = [
 
 export default function Navbar() {
   const route = '/'
-  let blur = false
+  let [blur, setBlur] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        !blur && setBlur(true)
+      } else {
+        blur && setBlur(false)
+      }
+    })
+  }, [])
   return (
     // bg-[#14141f]
+
+
     <Popover
-      className={`z-50 fixed top-0 left-0 right-0 mx-auto ${
+      className={`z-50 fixed top-0 left-0 right-0  ${
         blur
-          ? 'bg-white bg-opacity-[0.0001] backdrop-filter backdrop-blur-2xl'
+          ? 'bg-white h-auto bg-opacity-[0.0001] backdrop-filter backdrop-blur-3xl'
           : 'bg-transparent'
-      }   max-w-7xl`}
+      }`}
     >
-      <div className="font-orbitron flex items-center justify-between  py-4 px-2 md:justify-start md:space-x-10 animate-top-left">
+        
+      <div className=" mx-auto  max-w-7xl font-orbitron flex items-center justify-between  py-4 px-2 md:justify-start md:space-x-10 animate-top-left">
         <img
           src="/assets/logos/text-logo.svg"
           className="flex lg:hidden xl:flex"

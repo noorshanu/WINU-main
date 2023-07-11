@@ -8,6 +8,10 @@
   font-family: "power";
   src: url("/public/assets/fonts/PowerPassionDemoRegular.ttf");
 }
+@font-face {
+  font-family: "noBills";
+  src: url("/public/assets/fonts/postnobillscolombo-bold.ttf");
+}
 body {
   background: #15141a;
   font-family: "Montserrat", sans-serif;
@@ -15,6 +19,12 @@ body {
 
 .font-power {
   font-family: "power";
+}
+.font-no-bills {
+  font-family: "noBills";
+}
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
 }
 .bg-blur {
   background: rgba(255, 255, 255, 0.15);
