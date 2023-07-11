@@ -5,11 +5,11 @@ const Hero = () => {
     <div className="h-fit ">
       <img
         src="/assets/images/hero-bg.svg"
-        className="w-screen sm:h-[900px] sm:block hidden absolute -z-10 inset-0"
+        className="w-screen sm:h-[1100px] sm:block hidden absolute -z-10 inset-0"
       />
       <img
         src="/assets/images/hero-bg-sm.svg"
-        className="w-screen sm:h-[900px] sm:hidde block absolute -z-10 inset-0"
+        className="w-screen sm:h-[900px] sm:hidden block absolute -z-10 inset-0"
       />
       <div class="relative mx-auto max-w-7xl px-2 h-fit mt-[100px] sm:mt-0 sm:h-[620px] flex flex-col justify-end sm:justify-center items-center">
         <div className="hidden sm:flex gradient mx-auto left-0 right-0 absolute" />
