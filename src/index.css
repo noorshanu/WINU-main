@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,13 +6,24 @@
 
 @font-face {
   font-family: "power";
-  src: url("fonts/PowerPassionDemoRegular.ttf");
+  src: url("/public/assets/fonts/PowerPassionDemoRegular.ttf");
 }
-body{
-  background: #15141A;
-  font-family: 'Montserrat', sans-serif;
+body {
+  background: #15141a;
+  font-family: "Montserrat", sans-serif;
 }
 
-.font-power{
-  font-family: 'power';
+.font-power {
+  font-family: "power";
+}
+.bg-blur {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+.gradient {
+  border-radius: 272px;
+  background: var(--fd-7-d-00, #fd7d00);
+  filter: blur(137px);
+  width: 272px;
+  height: 245px;
 }

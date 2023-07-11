@@ -44,7 +44,16 @@ export default function Navbar() {
       }   max-w-7xl`}
     >
       <div className="font-orbitron flex items-center justify-between  py-4 px-2 md:justify-start md:space-x-10 animate-top-left">
-        <img src="/assets/logos/text-logo.svg" className="" alt="" />
+        <img
+          src="/assets/logos/text-logo.svg"
+          className="flex lg:hidden xl:flex"
+          alt=""
+        />
+        <img
+          src="/assets/logos/logo.svg"
+          className="hidden lg:flex xl:hidden"
+          alt=""
+        />
         <div className=" flex items-center  flex-grow space-x-4 lg:w-0">
           <Popover.Group
             as="nav"
@@ -73,7 +82,7 @@ export default function Navbar() {
             })}
           </Popover.Group>
           <div className="sm:flex hidden items-center gap-x-4 sm:flex-grow lg:flex-grow-0 justify-end">
-          <div className="bg-[#fff] bg-opacity-20 rounded-full h-[30px] w-[2px] mr-7 hidden lg:flex"></div>
+            <div className="bg-[#fff] bg-opacity-20 rounded-full h-[30px] w-[2px] mr-7 hidden lg:flex"></div>
             <a
               href="/"
               className=" whitespace-nowrap rounded-full cursor-pointer  hover:border-white   py-2.5 font-bold  px-8 text-sm  bg-[#FD7D00] text-white hover:bg-white hover:bg-opacity-40 transition-colors duration-300"
@@ -103,7 +112,7 @@ export default function Navbar() {
       >
         <Popover.Panel
           focus
-          className="absolute inset-x-0 top-0 origin-top-right transform py-2 transition md:hidden"
+          className="absolute inset-x-0 top-0 origin-top-right transform py-2 transition lg:hidden"
         >
           <div className=" rounded-lg bg-[#343444] shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="bg-black px-3 py-3 rounded-md">
