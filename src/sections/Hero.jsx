@@ -15,13 +15,13 @@ const Hero = () => {
         />
         <div class="flex gap-x-28 items-center flex-col justify-between w-full sm:flex-row z-10">
           <div>
-            <h1 class="mt-6 tracking-tighter text-left text-white font-serif text-[58px] font-normal italic font-power">
-              wORLDs BEST
+            <h1 class="mt-6 tracking-tighter text-left text-white font-serif text-[48px] font-normal italic font-power">
+              FIRST WRAPPED
             </h1>
-            <h1 class="mt-6 tracking-tighter text-center text-white font-serif text-[58px] font-normal italic font-power">
-              SHIBArium
+            <h1 class="mt-6 tracking-tighter text-center text-white font-serif text-[48px] font-normal italic font-power">
+              AND  SWAP 
             </h1>
-            <h1 class="mt-6 tracking-tighter text-right text-white font-serif text-[58px]  font-normal italic font-power">
+            <h1 class="mt-6 tracking-tighter text-right text-white font-serif text-[48px]  font-normal italic font-power">
               LAunchpad
             </h1>
           </div>
