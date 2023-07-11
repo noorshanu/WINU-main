@@ -1,4 +1,4 @@
-import React from "react";
+import Marquee from "react-fast-marquee";
 
 function AboutUs() {
   return (
@@ -19,6 +19,25 @@ function AboutUs() {
           </div>
         </div>
       </div>
+      <div className=" mt-6">
+    <Marquee speed={30} className="" >
+   
+      <img src="images/img1.png" alt="" className=" mx-4" />
+      <img src="images/img2.png" alt="" className="mx-4" />
+      <img src="images/img3.png" alt="" className=" mx-4" />
+      <img src="images/img4.png" alt="" className=" mx-4" />
+      <img src="images/img5.png" alt="" className=" mx-4" />
+      <img src="images/img1.png" alt="" className=" mx-4" />
+      <img src="images/img2.png" alt="" className=" mx-4" />
+      <img src="images/img3.png" alt="" className=" mx-4" />
+      <img src="images/img4.png" alt="" className=" mx-4" />
+      <img src="images/img5.png" alt="" className=" mx-4" />
+     
+   
+      
+      </Marquee>
+
+    </div>
     </section>
   );
 }
