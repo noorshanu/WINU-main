@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Hero = () => {
   return (
@@ -7,21 +7,21 @@ const Hero = () => {
         src="/assets/images/hero-bg.svg"
         className="w-screen h-[900px] absolute inset-0"
       />
-      <div class="relative mx-auto max-w-7xl px-2  h-[725px] flex justify-center items-center">
+      <div className="relative mx-auto max-w-7xl px-2  h-[725px] flex justify-center items-center">
         <div className="hidden sm:flex gradient mx-auto left-0 right-0 absolute" />
         <img
           src="/assets/images/hero-dog.svg"
           className="hidden sm:flex w-[36vw] h-[auto] left-0 right-0 mx-auto z-20 absolute "
         />
-        <div class="flex gap-x-28 items-center flex-col justify-between w-full sm:flex-row z-10">
+        <div className="flex gap-x-28 items-center flex-col justify-between w-full sm:flex-row z-10">
           <div>
-            <h1 class="mt-6 tracking-tighter text-left text-white font-serif text-[48px] font-normal italic font-power">
+            <h1 className="mt-6 tracking-tighter text-left text-white  text-[48px] font-normal italic font-power">
               FIRST WRAPPED
             </h1>
-            <h1 class="mt-6 tracking-tighter text-center text-white font-serif text-[48px] font-normal italic font-power">
+            <h1 className="mt-6 tracking-tighter text-center text-white  text-[48px] font-normal italic font-power">
               AND  SWAP 
             </h1>
-            <h1 class="mt-6 tracking-tighter text-right text-white font-serif text-[48px]  font-normal italic font-power">
+            <h1 className="mt-6 tracking-tighter text-right text-white  text-[48px]  font-normal italic font-power">
               LAunchpad
             </h1>
           </div>
