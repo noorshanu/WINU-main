@@ -1,4 +1,4 @@
-import {BsTwitter,BsFacebook} from 'react-icons/bs'
+import {BsTwitter,BsFacebook,BsInstagram,BsGithub} from 'react-icons/bs'
 
 function Footer() {
   return (
@@ -10,13 +10,24 @@ function Footer() {
           Clarity gives you the blocks and components you need to <br /> create
           a truly professional website.
         </p>
-       
+        <div className=" absolute bottom-[-178%] left-[46%] z-50">
+            <div className="flex gap-3 items-center">
+                <a href="" className='text-[#fff] border rounded-full px-1 py-1 border-[#fff] text-base'><BsTwitter/></a>
+                <a href="" className='text-[#fff] border rounded-full px-1 py-1 border-[#fff] text-base'><BsFacebook/></a>
+                <a href="" className='text-[#fff] border rounded-full px-1 py-1 border-[#fff] text-base'><BsInstagram/></a>
+                <a href="" className='text-[#fff] border rounded-full px-1 py-1 border-[#fff] text-base'><BsGithub/></a>
+
+            </div>
+
+        </div>
       </div>
 
       <div className="relative mt-[16rem]">
+   
     <div className="black-blur">
 
     </div>
+   
         <img
           src="images/footer-bg.png"
           alt=""
@@ -27,14 +38,7 @@ function Footer() {
           alt=""
           className=" absolute bottom-0 w-full z-10"
         />
-        <div className="">
-            <div className="flex">
-                <a href=""><BsTwitter/></a>
-                <a href=""><BsFacebook/></a>
-
-            </div>
-
-        </div>
+       
       </div>
     </section>
   );
