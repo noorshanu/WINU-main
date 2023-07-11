@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 function Token() {
   return (
@@ -7,6 +7,11 @@ function Token() {
             <div className='text-center text-3xl sm:text-5xl'>
                 <h1 className='text-[#fff] font-bold mb-4'>Tokenomics</h1>
                 <div className='bg-[#fff] w-[96px] h-[2px] mx-auto'></div>
+            </div>
+
+            <div className="text-center ml-44 mt-24">
+                <img src="assets/images/token.png" alt="" className="m-auto text-center" />
+
             </div>
 
         </div>
