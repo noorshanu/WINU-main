@@ -8,7 +8,7 @@ function HowTobuy() {
         </div>
 
         <div className=" mt-8">
-            <div className="flex justify-between gap-8">
+            <div className="grid max-w-6xl mx-auto sm:grid-cols-3 gap-8 px-4">
                 <div className="box-bg rounded-2xl px-[57px] py-[46px] text-center">
                     <h1 className="font-[700] text-2xl text-white mb-3">STEP 1</h1>
                     <p className=" text-[#91949A] text-xs font-[500]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the i </p>

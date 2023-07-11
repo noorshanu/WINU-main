@@ -30,6 +30,10 @@ body {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
 }
+.roadmap-blur {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+}
 .gradient {
   border-radius: 272px;
   background: var(--fd-7-d-00, #fd7d00);
@@ -37,17 +41,16 @@ body {
   width: 272px;
   height: 245px;
 }
-.box-bg{
+.box-bg {
   background-color: rgba(255, 255, 255, 0.05);
 }
-.black-blur{
- 
-border-radius: 200px;
-background: #000;
-filter: blur(68px);
-width: 100%;
-    height: 139px;
-    position: absolute;
-    top: -240px;
-    z-index: 30;
+.black-blur {
+  border-radius: 200px;
+  background: #000;
+  filter: blur(68px);
+  width: 100%;
+  height: 139px;
+  position: absolute;
+  top: -240px;
+  z-index: 30;
 }
