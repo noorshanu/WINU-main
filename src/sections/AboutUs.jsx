@@ -19,7 +19,7 @@ function AboutUs() {
           </div>
         </div>
       </div>
-      <div className=" mt-6">
+      <div className=" mt-12">
     <Marquee speed={30} className="" >
    
       <img src="images/img1.png" alt="" className=" mx-4" />
