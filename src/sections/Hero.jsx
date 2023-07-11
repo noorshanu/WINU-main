@@ -1,5 +1,3 @@
-
-
 const Hero = () => {
   return (
     <div className="h-fit ">
@@ -24,7 +22,8 @@ const Hero = () => {
                 First wrapped
               </h1>
               <h1 class=" tracking-tighter text-center sm:text-left text-white font-serif leading-[1.5] text-[12vw] sm:text-[5.5vw] lg:text-[4.5vw] font-semibold font-no-bills">
-                and 2.0 Swap <span className="ml-3 sm:ml-8 hidden sm:inline"> + </span>
+                and 2.0 Swap{' '}
+                <span className="ml-3 sm:ml-8 hidden sm:inline"> + </span>
               </h1>
               <h1 class="tracking-tighter text-right sm:text-left text-white font-serif leading-[0.4] text-[9vw] sm:text-[4.5vw] lg:text-[3.5vw]  font-normal  font-power">
                 LAunchpad
