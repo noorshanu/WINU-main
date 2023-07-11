@@ -37,16 +37,15 @@ export default function Navbar() {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 70) {
-        !blur && setBlur(true)
+      if (window.scrollY > 80) {
+        if (!blur) setBlur(true)
       } else {
-        blur && setBlur(false)
+        if (blur) setBlur(false)
       }
     })
   }, [])
   return (
     // bg-[#14141f]
-
 
     <Popover
       className={`z-50 fixed top-0 left-0 right-0  ${
@@ -55,7 +54,6 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-        
       <div className=" mx-auto  max-w-7xl font-orbitron flex items-center justify-between  py-4 px-2 md:justify-start md:space-x-10 animate-top-left">
         <img
           src="/assets/logos/text-logo.svg"
