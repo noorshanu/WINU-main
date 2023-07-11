@@ -18,7 +18,7 @@ function App() {
       <HowTobuy/>
       <Roadmap/>
       <Partners/>
-      <Partners/>
+      
       <Market/>
       <Footer/>
     </>
