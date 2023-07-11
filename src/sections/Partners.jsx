@@ -2,10 +2,10 @@ import Marquee from "react-fast-marquee";
 
 function Partners() {
   return (
-    <section className=" mt-6 sm:mt-12">
+    <section className=" mt-6 sm:mt-14 mb-4">
     <div className="mx-auto max-w-7xl">
       <div className="text-center text-3xl sm:text-5xl">
-        <h1 className="text-[#fff] font-bold mb-4">How To Buy</h1>
+        <h1 className="text-[#fff] font-bold mb-4">PARTNERS</h1>
         <div className="bg-[#FD7D00] w-[96px] h-[2px] mx-auto"></div>
       </div>
         
