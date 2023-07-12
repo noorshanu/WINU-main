@@ -1,6 +1,6 @@
 function HowTobuy() {
   return (
-    <section className=" mt-6 sm:mt-12">
+    <section className=" mt-[78px] sm:mt-12">
       <div className="mx-auto max-w-7xl">
         <div className="text-center text-3xl sm:text-5xl">
           <h1 className="text-[#fff] font-bold mb-4">How To Buy</h1>

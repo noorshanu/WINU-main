@@ -10,8 +10,8 @@ function Footer() {
           Clarity gives you the blocks and components you need to <br /> create
           a truly professional website.
         </p>
-        <div className=" absolute bottom-[-178%] left-[46%] z-50">
-            <div className="flex gap-3 items-center">
+        <div className=" absolute bottom-[-200%] sm:bottom-[-178%] left-0 right-0 mx-auto z-50">
+            <div className="flex gap-3 items-center justify-center">
                 <a href="" className='text-[#fff] border rounded-full px-1 py-1 border-[#fff] text-base'><BsTwitter/></a>
                 <a href="" className='text-[#fff] border rounded-full px-1 py-1 border-[#fff] text-base'><BsFacebook/></a>
                 <a href="" className='text-[#fff] border rounded-full px-1 py-1 border-[#fff] text-base'><BsInstagram/></a>
