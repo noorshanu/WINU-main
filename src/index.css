@@ -54,7 +54,14 @@ body {
   top: -240px;
   z-index: 30;
 }
-.market-blur{
-  background: linear-gradient(134deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.12) 100%);
-backdrop-filter: blur(8px);
+
+@media (min-width: 640px) {
+  .market-blur {
+    background: linear-gradient(
+      134deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.12) 100%
+    );
+    backdrop-filter: blur(8px);
+  }
 }

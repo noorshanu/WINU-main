@@ -2,9 +2,10 @@ import React from 'react'
 
 const Missions = () => {
   return (
-    <section className="mt-[15rem] sm:mt-4 mb-3 relative overflow-hidden">
+    <section className="mt-[75px] sm:mt-4 mb-3 relative overflow-hidden">
+      <img src='/assets/images/mission-sm.svg' className='w-full h-auto block sm:hidden'/>
         <img src='/assets/images/mission-gradient.svg' className='absolute top-0 right-0 sm:flex hidden -z-10 sm:max-w-xs md:max-w-none'/>
-      <div className=" mx-auto max-w-7xl mt-32">
+      <div className=" mx-auto max-w-7xl mt-[35px] sm:mt-32">
         <div className="flex flex-col sm:flex-row justify-between px-4 gap-y-7 mx-auto place-items-center">
           <div className='relative'>
             <img src='/assets/images/mission-bone-gradient.svg' className='hidden sm:flex top-[-200px] absolute'/>

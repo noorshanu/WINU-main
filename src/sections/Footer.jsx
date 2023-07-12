@@ -2,7 +2,7 @@ import {BsTwitter,BsFacebook,BsInstagram,BsGithub} from 'react-icons/bs'
 
 function Footer() {
   return (
-    <section className=" mt-12">
+    <section className="mt-[37px] sm:mt-[65px]">
       <div className="mx-auto text-center relative">
         <img src="/assets/logos/text-logo.svg" alt="" className="mx-auto z-40" />
 
