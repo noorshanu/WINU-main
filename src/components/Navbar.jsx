@@ -38,9 +38,9 @@ export default function Navbar() {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 80) {
-        if (!blur) setBlur(true)
+         setBlur(true)
       } else {
-        if (blur) setBlur(false)
+         setBlur(false)
       }
     })
   }, [])
