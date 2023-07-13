@@ -2,7 +2,7 @@ import Marquee from 'react-fast-marquee'
 
 function AboutUs() {
   return (
-    <section className="mt-[22rem] sm:mt-4 mb-3">
+    <section className="mt-[18rem] sm:mt-4 mb-3">
       <div className=" mx-auto max-w-7xl mt-32">
         <div className="flex flex-col sm:flex-row justify-between px-0 sm:px-4 gap-y-8 sm:gap-y-7 mx-auto place-items-center">
           <div className='px-4 sm:px-0'>

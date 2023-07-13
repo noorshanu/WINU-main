@@ -1,6 +1,7 @@
 function Token() {
   return (
-    <section>
+    <section className="relative">
+      <div className="tokenomic-blur absolute bottom-[-15%] left-[-98%] h-[120%] w-full" />
       <div className=" mx-auto max-w-7xl mt-[74px] sm:mt-32">
         <div className="text-center text-3xl sm:text-5xl">
           <h1 className="text-[#fff] font-bold mb-4">Tokenomics</h1>
@@ -21,7 +22,7 @@ function Token() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Token;
+export default Token

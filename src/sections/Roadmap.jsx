@@ -7,6 +7,7 @@ function Roadmap() {
         <div className="text-center text-3xl sm:text-5xl">
           <h1 className="text-[#fff] font-bold mb-4">Road Map</h1>
           <div className="mt-20 max-w-5xl mx-auto grid sm:grid-cols-1 gap-y-10 relative px-5">
+          <img className='absolute top-[470px] right-0 h-auto w-[100px] hidden sm:flex' src='/assets/images/roadmap-bg-pattern.svg'/>
             {/* line */}
             <img
               className="h-full w-auto absolute inset-0 sm:mx-auto pl-5 sm:pl-0"

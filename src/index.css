@@ -54,7 +54,16 @@ body {
   top: -240px;
   z-index: 30;
 }
-
+.how-to-buy {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(0, 0, 0, 0.29);
+}
+.tokenomic-blur {
+  border-radius: 1021px;
+  background: rgba(255, 123, 28, 0.49);
+  filter: blur(252px);
+}
 @media (min-width: 640px) {
   .market-blur {
     background: linear-gradient(

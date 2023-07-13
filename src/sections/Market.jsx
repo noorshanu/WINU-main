@@ -4,6 +4,7 @@ function Market() {
   return (
     <section className="mt-36 sm:px-5">
       <div className="h-auto sm:h-[670px] max-w-7xl flex items-center relative mx-auto ">
+        <img src='/assets/images/marketing-ring.svg' className='h-full w-auto absolute sm:h-[370px] my-auto right-0  top-0 bottom-0 hidden sm:flex'/> 
         <img
           className="absolute left-0 top-0 bottom-0 w-[75%] max-w-5xl sm:m-auto xl:m-0 h-auto z-20 self-center hidden sm:flex "
           src="/assets/images/marketing-dog.svg"
